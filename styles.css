@@ -1,0 +1,133 @@
+:root {
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+  background-repeat: repeat, repeat;
+  background-position: 0px 0, 5px 5px;
+  -webkit-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  -webkit-background-origin: padding-box, padding-box;
+  background-origin: padding-box, padding-box;
+  -webkit-background-clip: border-box, border-box;
+  background-clip: border-box, border-box;
+  -webkit-background-size: 10px 10px, 10px 10px;
+  background-size: 10px 10px, 10px 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+  transform: scaleX(1) scaleY(1) scaleZ(1);
+}
+
+.main {
+  background: #008b8b;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 120px;
+  transform: translate(-50%, -50%);
+}
+
+.main ::before {
+  content: "";
+  background: url("images/bg-pattern-top.svg");
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.main ::after {
+  content: "";
+  background: url("images/bg-pattern-bottom.svg");
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profile-card {
+  width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("images/bg-pattern-card.svg");
+  z-index: 1;
+  box-shadow: 0px 0px 40px 13px rgba(0, 0, 0, 0.11);
+}
+
+.card-image {
+  width: 25%;
+  height: 25%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 25% 0 0;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 15px 0 5px;
+}
+
+.card-title-span {
+  font-weight: 700;
+  color: #969696;
+}
+
+.card-location {
+  color: #969696;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+hr {
+  color: solid #9ba4b4;
+}
+
+.card-stats {
+  list-style: none;
+  padding: 0;
+}
+
+.card-stats li {
+  display: inline-block;
+  padding: 25px;
+}
+
+.item {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.item span {
+  font-size: .8rem;
+  color: #969696;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  position: fixed;
+  top: 97%;
+  left: 40%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
